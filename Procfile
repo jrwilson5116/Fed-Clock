@@ -1,1 +1,1 @@
-web gunicorn Fed-Clock:main 
+web: gunicorn main.py
