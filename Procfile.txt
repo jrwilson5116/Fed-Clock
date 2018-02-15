@@ -1,1 +1,1 @@
-web: gunicorn Fed-Clock:main --log-file=-
+web gunicorn Fed-Clock:main 
