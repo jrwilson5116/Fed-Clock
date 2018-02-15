@@ -1,2 +1,1 @@
-sbt compile stage
-web: gunicorn Fed-Clock:main.py --log-file=-
+web: gunicorn Fed-Clock:main --log-file=-
