@@ -21,13 +21,10 @@ def get_minutes(military_time):
 
 
 def get_time_decimal(clock_in,clock_out):
-    try:
-        clock_in = format_time(clock_in)
-        clock_out = format_time(clock_out)
-    except ValueError:
-        return "Invalid input"
+    clock_in = format_time(clock_in)
+    clock_out = format_time(clock_out)
     if clock_in > clock_out:
-        return "Invalid input"
+        clock_out += 1200
     time_worked = get_minutes(clock_out) - get_minutes(clock_in)
     extraneous = time_worked % 6
     if time_worked >= 360:
