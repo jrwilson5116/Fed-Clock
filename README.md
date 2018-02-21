@@ -1,4 +1,4 @@
-# Fed Clock
+# Fed Clock 
 
 Fed Clock takes an employees clock in time and a clock out time 
 and returns the time worked as a decimal format as well
@@ -15,9 +15,10 @@ that totals less than a tenth of an hour. If you want to
 use this for your workplace, you may need to tweak the 
 code to fit your needs. 
 
-### Todo
+### To Do 
 
 1. Add ways to handle bad input without crashing 
+
 
 ### Instructions
 

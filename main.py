@@ -87,7 +87,7 @@ form = """
 
     </body>
     <footer>
-    version 1.0<br>
+    version 1.1<br>
     created by: Joey Wilson
     </footer>
 </html>
