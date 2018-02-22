@@ -42,8 +42,6 @@ def over_under(time):
     return time
 
 
-
-
 def main():
     print("#################################################")
     print("testing with random numbers")

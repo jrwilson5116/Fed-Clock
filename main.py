@@ -18,6 +18,7 @@ def calculate():
     clock_out = request.form['time_out']
     if not sum(i.isdigit() for i in clock_in)>=3 or \
         not sum(e.isdigit() for e in clock_out)>=3:
+            error = 'Please enter a valid time!'
             return render_template('index.html').format("","")
     else:
         total = get_time_decimal(clock_in,clock_out)
