@@ -1,0 +1,45 @@
+    
+form {
+
+    background-color: #eee;
+
+    padding: 20px;
+
+    margin: 0 auto;
+
+    width: 540px;
+
+    font: 16px sans-serif;
+
+    border-radius: 10px;
+
+}
+
+h1 {
+    font: 80px sans-serif;
+    
+    padding: 20px;
+
+    margin: 0 auto;
+
+    width: 540px;
+
+    border-radius: 10px;
+
+    color: #483D8B
+
+
+}
+
+footer {
+    padding: 20px;
+
+    margin: 0 auto;
+
+    width: 540px;
+
+    border-radius: 10px;
+}
+
+    
+

@@ -1,5 +1,5 @@
 from time_keeper import get_time_decimal, over_under,get_minutes
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 
 
@@ -95,7 +95,7 @@ form = """
 
 @app.route("/")
 def index():
-    return form.format("","")
+    return render_template('index.html').format("","")
 
 
 @app.route("/",methods = ['POST'])
@@ -104,7 +104,7 @@ def calculate():
     clock_out=request.form['time_out']
     total = get_time_decimal(clock_in,clock_out)
     over = over_under(total)
-    return form.format(total,over)
+    return render_template('index.html').format(total,over)
 
 
 if __name__=="__main__":

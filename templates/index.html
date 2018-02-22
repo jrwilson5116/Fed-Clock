@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+        <header>
+            <h1> Fed Clock  </h1>
+        </header>
+       
+    </head>
+
+    <body>
+
+		<form action = "/" method = "post">
+			Time in: 
+			<input name ="time_in" type ="text" value = 0>
+            Hours Worked:
+            <input name = "time_worked" type = "text" value = {0}>
+			<br><br>
+            Time out:
+			<input name = "time_out" type ="text" value = 0>
+            Over/Under:
+            <input name = "over_under" typer = "text" value = {1}>
+			<br><br>
+			<input type ="submit">
+            <input type = "reset" value = "Clear fields">
+    
+		</form>
+
+
+    </body>
+    <footer>
+    version 1.2<br>
+    created by: Joey Wilson
+    </footer>
+</html>
