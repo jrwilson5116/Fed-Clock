@@ -17,7 +17,9 @@ code to fit your needs.
 
 ### To Do 
 
-1. Add ways to handle bad input without crashing 
+1. <del>Add ways to handle bad input without crashing</del> 
+
+2. Add error messages
 
 
 ### Instructions
