@@ -26,5 +26,6 @@ def calculate():
         return render_template('index.html').format(total,over)
 
 
+
 if __name__=="__main__":
     app.run(debug=True, use_reloader=True)

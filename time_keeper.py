@@ -26,6 +26,8 @@ def get_time_decimal(clock_in,clock_out):
     if clock_in > clock_out:
         clock_out += 1200
     time_worked = get_minutes(clock_out) - get_minutes(clock_in)
+    if not time_worked % 6 == 0 and time_worked < 560:
+        time_worked += 5
     extraneous = time_worked % 6
     if time_worked >= 360:
         extraneous += 30
