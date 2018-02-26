@@ -21,6 +21,7 @@ code to fit your needs.
 
 2. Add error messages
 
+3. Add automated error report emails
 
 ### Instructions
 
@@ -29,6 +30,7 @@ code to fit your needs.
 1. Install flask
 
 2. $ python main.py
+
 
 #### To Run On Heroku
 
