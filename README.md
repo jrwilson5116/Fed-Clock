@@ -23,6 +23,8 @@ code to fit your needs.
 
 3. Add automated error report emails
 
+3. Add AM PM checkboxes 
+
 ### Instructions
 
 #### To Run Locally
