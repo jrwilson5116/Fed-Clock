@@ -19,11 +19,13 @@ code to fit your needs.
 
 1. <del>Add ways to handle bad input without crashing</del> 
 
-2. Add error messages
+2. <del>Add AM PM checkboxes</del>
 
-3. Add automated error report emails
+3. Add error messages
 
-3. Add AM PM checkboxes 
+4. Add automated error report emails
+
+ 
 
 ### Instructions
 
