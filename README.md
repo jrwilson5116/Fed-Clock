@@ -21,7 +21,7 @@ code to fit your needs.
 
 2. <del>Add AM PM checkboxes</del>
 
-3. Add error messages
+3. <del>Add error messages</del>
 
 4. Add automated error report emails
 
