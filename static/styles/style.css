@@ -13,9 +13,6 @@ form {
     border-radius: 10px;
 
     clear: both;
-
-    /* display: table; */
-    
 }
 
 h1 {
@@ -27,8 +24,12 @@ h1 {
 
 }
 
-.error {
+.flash-message {
+    text-align: center;
+
     color: red;
+
+    font: 16px;
 }
 
 footer{

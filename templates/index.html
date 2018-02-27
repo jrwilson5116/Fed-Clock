@@ -12,15 +12,25 @@
     </head>
 
     <body>
-        <div class = "container">
+        <div class = "flash-message">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{message}}
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}      
+        {% block body %}{% endblock %}
+        </div>
+          
 		<form action = "/" method = "post">
 			Time in: &nbsp;
-            <input name ="time_in" type ="time" value = 0>
+            <input name ="time_in" type ="time" required value = 0>
             &nbsp; &nbsp; &nbsp; Hours Worked:
             <input name = "time_worked" readonly type = "text" value = {0} >
             <br><br>
             Time out:
-            <input name = "time_out"  type ="time" value = 0>
+            <input name = "time_out"  type ="time" required value = 0>
             &nbsp; &nbsp; &nbsp; Over/Under: &nbsp; &nbsp;
             <input name = "over_under" readonly type = "text" value = {1} >
 			<br><br>
@@ -28,7 +38,7 @@
             &nbsp; 
             <input type = "reset" value = "Clear Input">
         </form>
-        </div>
+        
     </body>
     <footer>
     <br>
