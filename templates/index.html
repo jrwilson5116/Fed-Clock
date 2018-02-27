@@ -12,26 +12,27 @@
     </head>
 
     <body>
-
+        <div class = "container">
 		<form action = "/" method = "post">
-			Time in: 
-			<input name ="time_in" type ="text" value = 0>
-            Hours Worked:
-            <input name = "time_worked" type = "text" value = {0}>
-			<br><br>
+			Time in: &nbsp;
+            <input name ="time_in" type ="time" value = 0>
+            &nbsp; &nbsp; &nbsp; Hours Worked:
+            <input name = "time_worked" readonly type = "text" value = {0} >
+            <br><br>
             Time out:
-			<input name = "time_out" type ="text" value = 0>
-            Over/Under:
-            <input name = "over_under" typer = "text" value = {1}>
+            <input name = "time_out"  type ="time" value = 0>
+            &nbsp; &nbsp; &nbsp; Over/Under: &nbsp; &nbsp;
+            <input name = "over_under" readonly type = "text" value = {1} >
 			<br><br>
-			<input type ="submit">
-            <input type = "reset" value = "Clear fields">
+            <input type ="submit">
+            &nbsp; 
+            <input type = "reset" value = "Clear Input">
         </form>
-        
-       
+        </div>
     </body>
     <footer>
-    Version 1.4<br>
+    <br>
+    Version 1.5<br>
     Created by: Joey Wilson
     </footer>
 </html>

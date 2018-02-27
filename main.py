@@ -1,5 +1,5 @@
-from time_keeper import get_time_decimal, over_under
-from flask import Flask, request, render_template
+from time_keeper import get_time_decimal, over_under,format_time
+from flask import Flask, request, render_template,redirect,url_for
 
 
 app = Flask(__name__)
@@ -16,15 +16,12 @@ def calculate():
     error = None
     clock_in = request.form['time_in']
     clock_out = request.form['time_out']
-    if not sum(i.isdigit() for i in clock_in)>=3 or \
-        not sum(e.isdigit() for e in clock_out)>=3:
-            error = 'Please enter a valid time!'
-            return render_template('index.html').format("","")
+    if format_time(clock_out) < format_time(clock_in):
+        return redirect(url_for('index'))
     else:
         total = get_time_decimal(clock_in,clock_out)
         over = over_under(total)
         return render_template('index.html').format(total,over)
-
 
 
 if __name__=="__main__":

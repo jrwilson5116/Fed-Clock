@@ -1,16 +1,7 @@
 import random
 
 def format_time(time):
-    pm = False
-    length = len(time)
-    for i in range(0,length):
-        if not time[i].isdigit():
-            if time[i].lower()=="p":
-                pm = True
-            time = time.replace(time[i]," ")
-    time = time.replace(" ","")
-    if pm and int(time)<1200:
-        time = int(time) + 1200
+    time = time.replace(":","")
     return int(time)
 
 
@@ -20,17 +11,17 @@ def get_minutes(military_time):
     return minutes
 
 
-def get_time_decimal(clock_in,clock_out):
+def get_time_decimal(clock_in,clock_out): 
     clock_in = format_time(clock_in)
     clock_out = format_time(clock_out)
-    if clock_in > clock_out:
-        clock_out += 1200
     time_worked = get_minutes(clock_out) - get_minutes(clock_in)
-    if not time_worked % 6 == 0 and time_worked < 510:
+    full_day = 510  
+    if not time_worked % 6 == 0 and time_worked < full_day:
         time_worked += 5
     extraneous = time_worked % 6
-    if time_worked >= 360:
-        extraneous += 30
+    lunch_cutoff = 360
+    if time_worked >= lunch_cutoff:
+        extraneous += 30 
     time_worked -= extraneous
     decimal = time_worked // 60
     decimal += time_worked % 60 / 60
