@@ -5,9 +5,9 @@ def format_time(time):
     return int(time)
 
 
-def get_minutes(military_time):
-    minutes = military_time // 100 * 60
-    minutes += military_time % 100
+def get_minutes(formatted_time):
+    minutes = formatted_time // 100 * 60
+    minutes += formatted_time % 100
     return minutes
 
 
