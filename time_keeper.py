@@ -19,7 +19,7 @@ def get_time_decimal(clock_in,clock_out):
     if not time_worked % 6 == 0 and time_worked < full_day:
         time_worked += 5
     extraneous = time_worked % 6
-    lunch_cutoff = 366
+    lunch_cutoff = 1000
     if time_worked >= lunch_cutoff:
         extraneous += 30 
     time_worked -= extraneous
