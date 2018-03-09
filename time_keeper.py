@@ -15,13 +15,14 @@ def get_time_decimal(clock_in,clock_out):
     clock_in = format_time(clock_in)
     clock_out = format_time(clock_out)
     time_worked = get_minutes(clock_out) - get_minutes(clock_in)
+    lunch_cutoff = 366
+    extraneous = 0
+    if time_worked >= lunch_cutoff:
+        extraneous += 30 
     full_day = 510  
     if not time_worked % 6 == 0 and time_worked < full_day:
         time_worked += 5
-    extraneous = time_worked % 6
-    lunch_cutoff = 1000
-    if time_worked >= lunch_cutoff:
-        extraneous += 30 
+    extraneous += time_worked % 6
     time_worked -= extraneous
     decimal = time_worked // 60
     decimal += time_worked % 60 / 60
