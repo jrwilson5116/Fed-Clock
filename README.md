@@ -15,17 +15,9 @@ that totals less than a tenth of an hour. If you want to
 use this for your workplace, you may need to tweak the 
 code to fit your needs. 
 
-### To Do 
+###Live Demo
+[Try me out!!!](https://fed-clock.herokuapp.com/)
 
-1. <del>Add ways to handle bad input without crashing</del> 
-
-2. <del>Add AM PM checkboxes</del>
-
-3. <del>Add error messages</del>
-
-4. Add automated error report emails
-
- 
 
 ### Instructions
 
